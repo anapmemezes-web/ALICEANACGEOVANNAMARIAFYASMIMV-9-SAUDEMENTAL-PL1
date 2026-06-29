@@ -1,0 +1,931 @@
+/* ===================================================
+ESTILO.CSS — Conexão Consciente — Saúde Mental e Redes Sociais
+Grupo: Alice, Ana C., Geovanna, Maria F. e Yasmim V.
+Data: 28/06
+=================================================== */
+
+/* ===================================================
+=== 1. VARIÁVEIS GLOBAIS (TOKENS DE DESIGN) ===
+=================================================== */
+
+:root {
+    --cor-primaria: #699992;
+    --cor-secundaria: #4F7B75;
+    --cor-acento: #8CB8B2;
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #222;
+    --cor-texto-sec: #555;
+    --cor-texto-inv: #f4f4f4;
+}
+
+/* ===================================================
+=== 2. RESET E BASE ===
+=================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #f4f4f4 0%, #eef5f4 100%);
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===================================================
+=== 3. TIPOGRAFIA ===
+=================================================== */
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* TÍTULOS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Antic', serif;
+}
+
+/* ===================================================
+=== 4. COMPONENTES REUTILIZÁVEIS ===
+=================================================== */
+
+.botao {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #699992;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: #4b726c;
+    transform: scale(1.05);
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+button {
+    background: #699992;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #4b726c;
+}
+
+a {
+    transition: .2s;
+}
+
+a:hover {
+    color: #4F7B75;
+}
+
+/* link externo */
+
+a[target="_blank"]::after {
+    content: " ↗";
+    font-size: .85em;
+}
+
+/* ===================================================
+=== 5. CABEÇALHO E NAVEGAÇÃO ===
+=================================================== */
+
+header {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.logo {
+
+    width: 160px;
+    height: 160px;
+    border-radius: 0;
+    object-fit: cover;
+    border: 5px solid #699992;
+    display: block;
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    background: #699992;
+    padding: 18px 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* ===================================================
+=== 6. HERO (PÁGINA HOME) ===
+=================================================== */
+
+.hero {
+    background-image: url("../imagens/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    position: relative;
+    padding: 60px 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 { 
+    font-size: clamp(2.5rem, 5vw, 4.5rem); 
+    margin-bottom: 20px; 
+} 
+.hero h2 { 
+    width: 70%; 
+    margin: auto; 
+    margin-bottom: 35px; 
+    font-weight: 
+    normal; 
+}
+
+/* ===================================================
+=== 7. PÁGINA HOME ===
+=================================================== */
+
+.destaques {
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.citacao {
+    text-align: center;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.citacao blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.citacao p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.imagem-destaque {
+    text-align: center;
+    padding: 50px;
+}
+
+.imagem-destaque p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+}
+
+.imagem-destaque figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-destaque img {
+    width: 500px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    display: block;
+}
+
+.imagem-destaque figcaption {
+    margin-top: 18px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* ==================================================
+=== 8. PÁGINA SOBRE ===
+================================================== */
+
+.quem-somos {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.quem-somos h2 {
+    font-size: 3rem;
+}
+
+.interrogacao {
+    color: #699992;
+    font-size: 3.5rem;
+}
+
+.grupo-linha1,
+.grupo-linha2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card-integrante {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.card-integrante img {
+    width: 80px;
+}
+
+.menor {
+    width: 180px;
+}
+
+.missao {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.missao p {
+    max-width: 850px;
+    margin: 0 auto 15px;
+}
+
+.numeros {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.titulo-tabela {
+    background: #699992;
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+thead {
+    background: #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+tbody tr:hover {
+    background: #dceeea;
+}
+
+.timeline {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.linha {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.linha::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #699992;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.evento {
+    margin: 40px 0;
+}
+
+.evento span {
+    font-weight: bold;
+    color: #699992;
+}
+
+/* ==================================================
+=== 9. PÁGINA TEMA ===
+================================================== */
+
+.grid-tema {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 30px;
+    padding: 40px;
+}
+
+.conteudo section {
+    margin-bottom: 60px;
+}
+
+#introducao h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.impacto {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #699992;
+    margin-bottom: 20px;
+}
+
+#causas article {
+    margin-bottom: 20px;
+}
+
+.cards-consequencias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards-consequencias .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+#depoimentos blockquote {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #699992;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #222;
+    display: block;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    color: #699992;
+}
+
+/* ==================================================
+=== 10. PÁGINA MÍDIA ===
+================================================== */
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    padding: 40px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+.centro {
+    flex: 2;
+}
+
+.galeria figure {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+.texto {
+    padding: 40px;
+    text-align: center;
+}
+
+.texto p {
+    max-width: 800px;
+    margin: auto;
+}
+
+.audio-imagem {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.audio-box,
+.imagem-box {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    padding: 15px;
+}
+
+.imagem-box img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.video {
+    padding: 40px;
+}
+
+.video video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ==================================================
+=== 11. PÁGINA CONTATO ===
+================================================== */
+
+.contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.aviso {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.info-contato {
+    margin-bottom: 40px;
+}
+
+.info-contato address {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: 2px solid #699992;
+}
+
+.radios {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.newsletter {
+    margin: 10px 0;
+}
+
+.msg-btn {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.msg {
+    flex: 1;
+}
+
+.extras {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mapa iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+.horarios dl {
+    font-weight: bold;
+}
+
+/* ==================================================
+=== 12. PÁGINA EXTRA ===
+================================================== */
+
+.pagina {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.pagina h1 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    color: var(--cor-primaria);
+}
+
+.pagina p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.organizacoes,
+.leituras,
+.ajudar,
+.dados,
+.glossario {
+    padding: 80px 20px;
+    background: #fff;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.05);
+}
+
+.organizacoes h2,
+.leituras h2,
+.ajudar h2,
+.dados h2,
+.glossario h2 {
+    text-align: center;
+}
+
+.organizacoes h2 {
+    color: #4F7B75;
+}
+
+.leituras h2 {
+    color: #699992;
+}
+
+.ajudar h2 {
+    color: #4F7B75;
+}
+
+.dados h2 {
+    color: #699992;
+}
+
+.glossario h2 {
+    color: #4F7B75;
+}
+
+.cards-organizacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.card-organizacao {
+    background: linear-gradient(135deg, #ffffff, #f6fbfa);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+    transition: .3s;
+    border-left: 6px solid #4F7B75;
+}
+
+.card-organizacao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.2);
+    border-left: 6px solid #8CB8B2;
+}
+
+.leituras ul,
+.dados ul {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.leituras li,
+.dados li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.ajudar ol {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.ajudar li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+    transition: .2s;
+    border-left: 5px solid #8CB8B2;
+}
+
+.ajudar li:hover {
+    transform: scale(1.02);
+}
+
+.glossario table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.glossario th {
+    background: #699992;
+    color: #fff;
+    padding: 15px;
+}
+
+.glossario td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    background: #fafafa;
+}
+
+.glossario tbody tr:nth-child(even) {
+    background: #eef5f4;
+}
+
+.glossario tbody tr:hover {
+    background: #dbeae7;
+}
+
+.glossario summary {
+    font-weight: bold;
+    color: #4F7B75;
+    cursor: pointer;
+}
+
+@media(max-width:900px) {
+    .cards-organizacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .cards-organizacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina h1 {
+        font-size: 2rem;
+    }
+}
+
+/* ==================================================
+=== 13. RODAPÉ ===
+================================================== */
+
+footer {
+    margin-top: 70px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+.links-footer {
+    margin: 25px 0;
+}
+
+.links-footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: .3s;
+}
+
+.links-footer a:hover {
+    color: #699992;
+}
+
+footer a {
+    color: #8ec5bc;
+}
+
+/* ==================================================
+=== 14. RESPONSIVIDADE ===
+================================================== */
+
+@media(max-width:900px){
+
+    .cards-organizacoes{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .ajuda-dados-container{
+        flex-direction:column;
+    }
+}
+
+@media(max-width:600px){
+
+    .cards-organizacoes{
+        grid-template-columns:1fr;
+    }
+
+    .pagina h1{
+        font-size:2rem;
+    }
+}
+
+/* ==================================================
+=== AJUSTES FINAIS / CONSOLIDAÇÃO ===
+================================================== */
+
+.cards-consequencias .card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+#depoimentos blockquote {
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #699992;
+    margin-bottom: 20px;
+}
+
+.leituras li,
+.dados li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.ajudar li {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+/* ==================================================
+=== FIM DO CSS ===
+================================================== */
