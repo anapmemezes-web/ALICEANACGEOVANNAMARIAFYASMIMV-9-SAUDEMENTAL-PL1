@@ -1,0 +1,25 @@
+Cores:
+- Verde principal: #699992 
+- Tons neutros: branco e cinza 
+As cores foram escolhidas pensando em unir tecnologia e saúde mental dentro do tema do projeto.
+O verde foi utilizado por estar associado à saúde, equilíbrio e tranquilidade, trazendo a ideia principal de cuidado com o bem-estar e com a mente. Além disso, ajuda a transmitir uma sensação mais leve e acolhedora.
+O cinza representa o lado tecnológico e mais moderno do site, dando um aspecto mais sério e ligado ao ambiente digital, sem deixar o visual pesado ou exagerado.
+O branco foi usado para dar leveza e equilíbrio entre as outras cores, deixando o conteúdo mais limpo, organizado e fácil de visualizar.
+A combinação dessas cores busca criar harmonia entre tecnologia e saúde mental, resultando em um visual simples, moderno e agradável.
+
+Tipografia:
+- Títulos: Antic 
+- Texto: Montserrat )
+As fontes escolhidas seguiram o mesmo raciocínio da identidade visual, buscando equilibrar tecnologia e saúde mental de forma simples e harmônica.
+A fonte Antic foi utilizada para trazer uma sensação mais moderna e tecnológica ao projeto. Ela também foi aplicada na logo, ajudando a reforçar a identidade do site e dando mais personalidade ao visual.
+Já a fonte Montserrat foi escolhida para os textos por ser mais neutra e de fácil leitura. Ela ajuda a dar uma quebra na parte mais estilizada da Antic, trazendo suavidade e deixando o conteúdo mais organizado e agradável de ler.
+A combinação das duas fontes cria um equilíbrio entre estilo e simplicidade, reforçando a proposta do projeto de unir tecnologia com bem-estar de forma leve e acessível.
+
+Logo:
+A logo foi desenvolvida utilizando a cor principal escolhida para o site, um tom esverdeado que transmite equilíbrio, cuidado e ligação com a saúde mental. Essa cor reforça a identidade visual do projeto e mantém a harmonia com o restante do site.
+A fonte Antic também foi utilizada na construção da logo, trazendo um aspecto mais moderno e tecnológico, seguindo a mesma ideia já aplicada na identidade visual do projeto.
+O símbolo central da logo é o esboço de um cérebro, representando diretamente o tema da saúde mental, que é o foco principal do trabalho. Dentro dele, as terminações em formato de conexões lembram circuitos tecnológicos, reforçando a ideia de união entre mente humana e tecnologia.
+Assim, a logo combina elementos visuais simples, mas significativos, unindo tecnologia, saúde mental e modernidade em uma identidade única e coerente com o tema do projeto.
+
+Favicon:
+O ícone escolhido para o projeto é um pixel art de um telefone, representando de forma visual e direta a temática das redes sociais dentro do tema trabalhado. A escolha do estilo pixelado foi feita para trazer uma estética mais simples, nostálgica e ao mesmo tempo moderna, remetendo aos primeiros elementos digitais e à evolução da comunicação online.
